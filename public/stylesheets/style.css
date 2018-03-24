@@ -1,0 +1,205 @@
+body {
+	font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+	padding: 5%;
+}
+
+.parent-container {
+	margin: auto;
+	width: 70%;
+	border: 1px solid black;
+}
+
+a{
+	cursor: pointer;
+}
+
+/*subject nav start*/
+.subject-nav {
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+.add-subject-nav {
+	float: right;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #4CAF50;
+}
+
+.active {
+	background: #4CAF50 !important;
+}
+
+/*subject nav end*/
+
+/*controller nav start*/
+.controller-nav ul {
+	background: #4CAF50;
+}
+
+.controller-opt li a {
+	padding: 6px 8px;
+}
+
+.sort {
+	float: right;
+	display: block;
+    color: white;
+    text-align: center;
+    padding: 4px 6px;
+}
+
+/*controller nav end*/
+
+/*content container start*/
+
+.content-container {
+
+}
+
+input[type=text], textarea, .tag-selector {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.welcome-page{
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 40px;
+}
+
+.welcome-page .notice{
+    padding: 10%;
+    width: 30%;
+    color: silver;
+    margin: auto;
+    text-align: center;
+    border-radius: 20px;
+    border: 2px dashed silver;
+}
+
+.new-subject {
+	display: none;
+	border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 40px;
+}
+
+.new-note {
+	display: none;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 40px;
+}
+
+.new-tag {
+	display: none;
+	border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 40px;
+}
+
+/*notes list start*/
+.notes {
+    display: none;
+	background-color: #f2f2f2;
+    padding: 40px;
+}
+
+.notes .note-card {
+	border: 1px solid black;
+	border-radius: 5px;
+	background-color: white;
+	margin-bottom: 5%;
+}
+
+.notes .note-card a {
+    color: #4CAF50;
+	text-decoration: none;
+}
+
+.notes .note-card .title-mini {
+	margin: 0;
+	padding: 0.5%;
+}
+
+.notes .note-card .content-mini  {
+    margin: 0;
+    padding: 1%;
+}
+
+.notes .note-card hr {
+	margin: 0;
+}
+
+/*notes list END*/
+
+/*note detail START*/
+
+.detail {
+	display: none;
+	background-color: #f2f2f2;
+    padding: 40px;
+}
+
+.detail .title {
+	margin-bottom: 0px;
+}
+
+.note-description {
+	padding: 10px;
+}
+
+.note-description .desc {
+	display: inline;
+	padding: 2px;
+	border-radius: 5px;
+	margin-right: 5px;
+	color: white;
+	background-color: #4CAF50;
+}
+
+.detail .content {
+	text-align: justify;
+}
+
+/*note detail END*/

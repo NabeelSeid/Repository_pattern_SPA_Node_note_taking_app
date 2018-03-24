@@ -1,0 +1,88 @@
+doctype html
+html
+  head
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    title= title
+    link(rel='stylesheet', href='/stylesheets/style.css')
+  body
+    div.parent-container
+      div.subject-nav
+        ul
+          span#nav-ul
+
+          ul.add-subject-nav
+            li
+              a(onclick='showTemplate(document.getElementById("new-subject"))') +Add
+
+
+      div.controller-nav#controller-nav
+        ul.controller-opt
+          li
+            a(onclick='showTemplate(document.getElementById("new-note"))') Add Note
+          li
+            a(onclick='showTemplate(document.getElementById("new-tag"))') Add New Tag
+
+          div.sort
+            form.controller-sort
+                  | Sort By &nbsp 
+                  select(name="tag")
+                    option one
+                    option two
+
+
+      div.content-container
+
+        div.welcome-page#welcome-page
+          h1.notice Select Subject
+
+        div.new-subject#new-subject
+          h2 Add New Subject
+          form(method='POST', autocomplete='off')#add-subject-form
+            label(for="subject")="subject"
+            input(type="text", id="subject", name="subject")
+
+            input(type="submit", value="Add Subject")
+
+        div.new-tag#new-note
+          h2 Add New Tag
+          form#add-note-form
+            label(for="tag")="Tag"
+            select(name="tag", id="tag", class="tag-selector")
+              option Hello
+
+            label(for="title")="Title"
+            input(type="text", id="title", name="title")
+
+            label(for="lname")="Note"
+            textarea(name="content")
+
+            input(type="submit", value="Add Tag Note")
+
+        div.new-tag#new-tag
+          h2 Add New Tag
+          form#add-tag-form
+            label(for="tag")="Tag"
+            input(type="text", id="tag", name="tag")
+
+            input(type="submit", value="Add Tag Note")
+
+        div.notes#notes
+          h2 Notes
+          div.note-card
+            h3.title-mini
+              a() Title its is going to be big so
+            hr
+            p.content-mini Heksdfi sdaf  sdaf s daf sad f  sdaf  sadf <strong>dsaf<string> Heksdfi sdaf  sdaf s daf sad f  sdaf  sadf <strong>dsaf<string> Heksdfi sdaf  sdaf s daf sad f  sdaf  sadf <strong>dsaf<string> Heksdfi sdaf  sdaf s daf sad f  sdaf  sadf <strong>dsaf<string> Heksdfi sdaf  sdaf s daf sad f  sdaf  sadf <strong>dsaf<string> Heksdfi sdaf  sdaf s daf sad f  sdaf  sadf <strong>dsaf<string> Heksdf
+
+        div.detail#detail
+          h2.title Title is going to be big so
+          div.note-description
+            div.desc="Python"
+            div.desc="Function"
+          h3 Note
+          p.content Heksdfi sdaf  sdaf s daf sad f  sdaf  sadf <strong>dsaf<string> Heksdfi sdaf  sdaf s daf sad f  sdaf  sadf <strong>dsaf<string> Heksdfi sdaf  sdaf s daf sad f  sdaf  sadf <strong>dsaf<string> Heksdfi sdaf  sdaf s daf sad f  sdaf  sadf <strong>dsaf<string> Heksdfi sdaf  sdaf s daf sad f  sdaf  sadf <strong>dsaf<string> Heksdfi sdaf  sdaf s daf sad f  sdaf  sadf <strong>dsaf<string> Heksdfi 
+
+
+
+    script(src='/javascripts/app.js')    
+    script(src='/javascripts/ajax.js')    

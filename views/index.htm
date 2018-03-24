@@ -1,0 +1,100 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width" initial-scale="1.0" />
+        <title></title>
+        <link rel="stylesheet" href="../public/stylesheets/style.css">
+    </head>
+    <body>
+        <div class="parent-container">
+            <div class="subject-nav">
+                <ul>
+                    <span id="nav-ul"></span>
+                    <ul class="add-subject-nav">
+                        <li>
+                            <a onclick="showTemplate(document.getElementById('new-subject'))"> +Add</a>
+                        </li>
+                    </ul>
+                </ul>
+            </div>
+            <div class="controller-nav" id="controller-nav">
+                <ul class="controller-opt">
+                    <li>
+                        <a onclick="showTemplate(document.getElementById('new-note'))">Add Note</a>
+                    </li>
+                    <li>
+                        <a onclick="showTemplate(document.getElementById('new-tag'))">Add New Tag</a>
+                    </li>
+                    <div class="sort">
+                        <form class="controller-sort">
+                            Sort By &nbsp
+                            <select name="tag">
+                                <option>One</option>
+                                <option>two</option>
+                            </select>
+                        </form>
+                    </div>
+                </ul>
+            </div>
+            <div class="content-container">
+                <div class="welcome-page" id="welcome-page">
+                    <h1 class="notice">Select Subject</h1>
+                </div>
+                <div class="new-subject" id="new-subject">
+                    <h2>Add New Subject</h2>
+                    <form method="POST" autocomplete="off" >
+                        <label for="subject">subject</label>
+                        <input type="text" id="subject" name="subject"/>
+                        <input type="submit" value="Add Subject" />
+                    </form>
+                </div>
+
+                <div class="new-tag" id="new-note">
+                    <h2>Add New Tag</h2>
+                    <form id="add-note-form">
+                        <label for="tag">Tag</label>
+                        <select name="tag" id="tag" class="tag-selector">
+                            <option>Hello</option>
+                        </select>
+                        <label for="title">Title</label>
+                        <input type="text" id="title" name="title" />
+
+                        <label for="lname">Note</label>
+                        <textarea name="content"></textarea>
+
+                        <input type="submit" value="Add Tag Note" />
+                    </form>
+                </div>
+
+                <div class="new-tag" id="new-tag">
+                    <h2>Add New Tag</h2>
+                    <form id="add-tag-form" >
+                        <label for="tag">Tag</label>
+                        <input type="text" id="tag" name="tag" />
+                        <input type="submit" value="Add Tag Note" />
+                    </form>
+                </div>
+
+                <div class="notes" id="notes">
+                    <h2>Notes</h2>
+                    <div class="note-card">
+                        <a>Title its is going to be big so</a>
+                        <hr>
+                        <p class="content-mini">Heksdfi sdaf  sdaf s daf sad f  sdaf  sadf <strong>dsaf<string> Heksdfi sdaf  sdaf s daf sad f  sdaf  sadf <strong>dsaf<string> Heksdfi sdaf  sdaf s daf sad f  sdaf  sadf <strong>dsaf<string> Heksdfi sdaf  sdaf s daf sad f  sdaf  sadf <strong>dsaf<string> Heksdfi sdaf  sdaf s daf sad f  sdaf  sadf <strong>dsaf<string> Heksdfi sdaf  sdaf s daf sad f  sdaf  sadf <strong>dsaf<string> Heksdf</p>
+                    </div>
+                </div>
+
+                <div class="detail" id="detail">
+                    <h2 class="title">Title is going to be big so</h2>
+                    <div class="note-description">
+                        <div class="desc">Python</div>
+                        <div class="desc">Function</div>
+                    </div>
+                    <h3>Note</h3>
+                    <p class="content">Heksdfi sdaf  sdaf s daf sad f  sdaf  sadf <strong>dsaf<string> Heksdfi sdaf  sdaf s daf sad f  sdaf  sadf <strong>dsaf<string> Heksdfi sdaf  sdaf s daf sad f  sdaf  sadf <strong>dsaf<string> Heksdfi sdaf  sdaf s daf sad f  sdaf  sadf <strong>dsaf<string> Heksdfi sdaf  sdaf s daf sad f  sdaf  sadf <strong>dsaf<string> Heksdfi sdaf  sdaf s daf sad f  sdaf  sadf <strong>dsaf<string> Heksdf</p>
+                </div>
+            </div>
+        </div>
+		<script src="../public/javascripts/apps.js"></script>
+		<script src="../public/javascripts/ajax.js"></script>
+    </body>
+</html>
